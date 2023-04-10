@@ -22,3 +22,4 @@
    1. Convert elements such as `TAXI_ID` to embeddings?
       1. Neural net can learn similarities between different drivers' patterns.
    2. Convert UNIX timestamps to day of week, month, and time of day.
+   3. Add columns for longitude/latitude for type `B` entries
