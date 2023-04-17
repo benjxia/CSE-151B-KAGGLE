@@ -13,7 +13,8 @@
    2. Delete column `DAY_TYPE`, it's `A` for every entry, what's the point in keeping it?
    3. Deleting column `TRIP_ID`, they're all unique values and we don't see how this column helps in generalization.
    4. Set `ORIGIN_STAND` and `ORIGIN_CALL` to 0 for entries where these columns are null.
-      1. Convert entries to indices for embeddings
+      1. Convert `ORIGIN_STAND` entries to indices for embeddings.
+      2. `ORIGIN_CALL` has new entries not seen in test set, leave as is and pass into neural net directly.
    5. Call type assigned to indices for embeddings
    6. Convert UNIX timestamps to day of week, month, and time of day.
       1. Delete original timestamp column
