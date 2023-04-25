@@ -26,4 +26,4 @@ class KGLE_Dataset(Dataset):
         :return: (item, label) at index in dataset, item is predictor, label is prediction target
         """
         row = self.df.iloc[item]
-        return torch.tensor(row[:-1]).double(), torch.tensor(row[-1]).double()
+        return torch.tensor(row[:-1]).to(dtype=torch.float32), torch.tensor(row[-1]).to(dtype=torch.float32)
