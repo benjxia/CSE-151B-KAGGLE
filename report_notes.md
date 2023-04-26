@@ -16,9 +16,10 @@
       1. Convert `ORIGIN_STAND` entries to indices for embeddings.
       2. `ORIGIN_CALL` has new entries not seen in test set, leave as is and pass into neural net directly.
    5. Call type assigned to indices -> one-hot encoding
-   6. Convert `TAXI_ID` to indices for embeddings
-   7. Convert UNIX timestamps to day of week, month, and time of day.
+   6. Convert `TAXI_ID` to indices for embeddings.
+   7. Convert UNIX timestamps to day of week of yr, day of week, quarter hr of day
       1. Delete original timestamp column
+      2. Then convert to embeddings
    8. Convert polylines to estimation target with entry `TARGET` in new csv: $(n - 1) * 15$, and delete `POLYLINE` column.
 2. Pruning
    1. Delete rows where target is not within 5 standard deviations of mean.
