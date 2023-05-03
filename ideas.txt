@@ -1,0 +1,6 @@
+add columns: starting coordinates (lat long), distance from city center
+
+
+for data pts without starting coords: nearest neighbors based on other metrics?
+ - k - means clustering to find hotspots for imputing starting coords?
+ - nearest neighbors to determine typical speed from starting location and trip starting time?
