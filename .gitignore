@@ -1,3 +1,6 @@
 *.csv
 .idea/
 .vscode/
+*.npy
+*.zip
+*.pyc
