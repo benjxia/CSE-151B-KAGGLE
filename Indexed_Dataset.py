@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader, Dataset
 import numpy as np
 
 
-class KGLE_Dataset(Dataset):
+class Indexed_Dataset(Dataset):
     """
     Kaggle Dataset Pytorch class (Training set only)
     """
