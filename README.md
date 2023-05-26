@@ -1,4 +1,4 @@
-# CSE 151B Kaggle
+# CSE 151B Kaggle: Team 5 - Negative Brane Cells
 ## Setup
 1. Ensure Pandas, Pytorch, and Numpy are all installed.
 2. Place original dataset csv's in a data directory within the project directory.
